@@ -17,4 +17,14 @@ Build a tic-tac-toe game on the command line where two human players can play ag
 - How to check for winning states? Create a nested array filled with the variables for each square? Then match to winning states? Probably don't need to check winning states until turn 5, so keep the number of turns somehow?
 
 # Results and Evaluation
-To be added later
+- Structure: I generally had a good idea of how to do this. On the go, I have found out you can pass objects into other objects as variables used for initializing an instance. This is pretty fun and usefull.
+- Storing the board turned out to be intuitive once the board was drawn. This was easiest with an array, from which everything else followed.
+- Turns out to be easier, just store in an array and draw that array
+- Trivial to create, yes, always obvious how to use, no. As stated before, passing them into initializing the game class make sense and is easier for using the player variables.
+- Looping took some rewriting. Having the variables for player objects available helped a lot. Once that was set up, it made more sense to just use a method call to switch the current player every time, instead of working with changing states and from that reading corresponding player details.
+- Took some struggling with this. Ended up stating the winning states as a constant which was then used to check against the current board. Kind of obvious, but took some time to figure out the workings. Good strategy to keep in mind for the future.
+
+# To reconsider when revisiting in the future
+- Create players in initializing game object instead of sperate calls in general code?
+- Variable board size?
+- Play versus computer

@@ -84,6 +84,7 @@ class Game
     print "\n\n"
   end
 
+  # only runs when it's the first game
   def tutorial
     puts 'You will only see this explanation for the first game you play. See the game grid below:'
     draw_game_board(@game_board)
@@ -91,7 +92,7 @@ class Game
     puts 'You will be asked to enter a number corresponding to the square you want to play your symbol in.'
     puts 'After typing the number, press enter. You will see the move you have just played on the board.'
     puts "If there\'s a winner, you can see the result and choose to play a new game."
-    puts 'The player that starts will alternate every game'
+    puts 'The player that starts will alternate every game.'
     puts "\nReady?! Be careful out there! Your opponent is always around to give you a kiss or hug of death...\n\n"
     enter
   end
